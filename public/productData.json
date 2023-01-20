@@ -1,0 +1,50 @@
+[
+    {
+      "_id": "63ca5682824781f5873a6c37",
+      "picture": "https://i.ibb.co/zs0Mx4B/chair.png",
+      "price": 411,
+      "name": "Richard"
+    },
+    {
+      "_id": "63ca56828a0fb2f98ad3709f",
+      "picture": "https://i.ibb.co/zs0Mx4B/chair.png",
+      "price": 26,
+      "name": "Nanette"
+    },
+    {
+      "_id": "63ca5682f3664d626a056d46",
+      "picture": "https://i.ibb.co/zs0Mx4B/chair.png",
+      "price": 315,
+      "name": "Imelda"
+    },
+    {
+      "_id": "63ca56827b55eb0503f09099",
+      "picture": "https://i.ibb.co/zs0Mx4B/chair.png",
+      "price": 35,
+      "name": "Anthony"
+    },
+    {
+      "_id": "63ca56827601de16072b6df0",
+      "picture": "https://i.ibb.co/zs0Mx4B/chair.png",
+      "price": 238,
+      "name": "Evans"
+    },
+    {
+      "_id": "63ca56820defeaa0e23aa422",
+      "picture": "https://i.ibb.co/zs0Mx4B/chair.png",
+      "price": 381,
+      "name": "Gross"
+    },
+    {
+      "_id": "63ca56822efdf9a8562b69d9",
+      "picture": "https://i.ibb.co/zs0Mx4B/chair.png",
+      "price": 56,
+      "name": "Latasha"
+    },
+    {
+      "_id": "63ca5682649f8d14d3418bdd",
+      "picture": "https://i.ibb.co/zs0Mx4B/chair.png",
+      "price": 439,
+      "name": "Ollie"
+    }
+  ]
