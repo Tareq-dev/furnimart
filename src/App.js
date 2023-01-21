@@ -17,7 +17,7 @@ function App() {
   const [cart, setCart] = useState([]);
 
   // fetch products
-  const [] = useProducts([])
+  const [products] = useProducts([])
   // Add to cart logic
 
   const addToCard = (product) => {
@@ -52,7 +52,7 @@ function App() {
   const itemsPrice = cart.reduce((a, c) => a + c.quantity * c.price, 0);
   
   return (
-    <div className="md:px-14">
+    <div className="md:px-14 overflow-hidden">
       <Navbar cart={cart} />
       <Routes>
         <Route

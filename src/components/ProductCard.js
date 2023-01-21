@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function ProductCard({ product, addToCard, cart, onRemoveCart, itemsPrice }) {
   return (
-    <div className="mt-10">
+    <div className="md:mt-10 mt-4">
       <img
         className="h-52 w-56 bg-[#ebfdff] rounded-md"
         src={product.picture}

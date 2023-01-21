@@ -7,7 +7,7 @@ function ManageProducts() {
   const productDataParse = JSON.parse(productData);
   return (
     <div className="py-8">
-      <div className="flex justify-end pr-14">
+      <div className="flex justify-center md:justify-end md:pr-14">
         <Link
           to="add-product"
           className="bg-white px-4 py-2 font-semibold rounded flex items-center"
@@ -20,7 +20,6 @@ function ManageProducts() {
         <table className="table w-full mx-4">
           <thead>
             <tr>
-              <th>No</th>
               <th>Products</th>
               <th>Sale</th>
               <th>Earning</th>
@@ -30,7 +29,6 @@ function ManageProducts() {
           <tbody>
             {productDataParse.map((product, i) => (
               <tr key={i}>
-                <th>{i + 1}</th>
                 <td>
                   <div className="flex items-center space-x-3">
                     <div className="avatar">

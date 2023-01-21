@@ -8,7 +8,7 @@ import TopSellingProduct from "../../components/TopSellingProduct";
 function Admin() {
   return (
     <div>
-      <div className="py-10 grid grid-cols-4 gap-5">
+      <div className="py-10 grid grid-cols-1 md:grid-cols-4 gap-5">
         <div className="flex items-center justify-center bg-white py-6 mx-2 shadow-sm rounded-md">
           <div className="px-4 mx-4 bg-sky-100 rounded-full w-16 h-16">
             <BsBoxSeam className="mt-4" size={30} />

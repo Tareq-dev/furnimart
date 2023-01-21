@@ -5,6 +5,7 @@ import {
   XAxis,
   YAxis,
   Tooltip,
+  ResponsiveContainer,
 } from "recharts";
 
 function Chart() {
@@ -45,7 +46,8 @@ function Chart() {
   return (
     <div>
       <p className="text-xl text-center py-4 font-bold">Earning Statictics</p>
-      <div className="flex justify-center">
+      <div style={{ width: "100%", height: 300 }} className="flex justify-center">
+        <ResponsiveContainer>
         <AreaChart
           className="bg-white px-2"
           width={800}
@@ -63,6 +65,8 @@ function Chart() {
           <Tooltip />
           <Area type="monotone" dataKey="earn" stroke="#8884d8" fill="#8884d8" />
         </AreaChart>
+        </ResponsiveContainer>
+       
       </div>
     </div>
   );
