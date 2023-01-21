@@ -12,9 +12,8 @@ function Subscribs() {
         }}
       >
         <div>
-          <p className="py-4">
-            Please Subscrib us for latest update Please Subscrib us for latest
-            update
+          <p className="py-4 text-center text-lg font-semibold">
+            Please Subscribe us for latest update .
           </p>
           <div className="flex px-20">
             <input
@@ -23,7 +22,7 @@ function Subscribs() {
               className="py-2 px-4 border rounded-lg"
             />
             <button className="py-2 px-4 border bg-black text-red-400 font-bold rounded-lg">
-              Subscribs
+              Subscribe
             </button>
           </div>
         </div>

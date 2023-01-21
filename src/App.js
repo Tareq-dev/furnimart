@@ -10,9 +10,14 @@ import Customers from "./pages/AdminDashboard/Customers";
 import OrderList from "./pages/AdminDashboard/OrderList";
 import ManageProducts from "./pages/AdminDashboard/ManageProducts";
 import Admin from "./pages/AdminDashboard/Admin";
+import AddProduct from "./components/AddProduct";
+import useProducts from './hooks/useProducts';
 
 function App() {
   const [cart, setCart] = useState([]);
+
+  // fetch products
+  const [] = useProducts([])
   // Add to cart logic
 
   const addToCard = (product) => {
@@ -45,6 +50,7 @@ function App() {
   // Subtotal of cart
 
   const itemsPrice = cart.reduce((a, c) => a + c.quantity * c.price, 0);
+  
   return (
     <div className="md:px-14">
       <Navbar cart={cart} />
@@ -81,6 +87,10 @@ function App() {
               onRemoveCart={onRemoveCart}
             />
           }
+        />
+        <Route
+          path="/admin/manage-product/add-product"
+          element={<AddProduct />}
         />
         <Route path="/admin" element={<AdminDashboard />}>
           <Route index element={<Admin />}></Route>

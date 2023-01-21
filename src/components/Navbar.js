@@ -1,7 +1,7 @@
 import React from "react";
 import { BiSearchAlt2 } from "react-icons/bi";
 import { BsCart3 } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 function Navbar({cart}) {
   return (
     <div className="navbar bg-base-100">
@@ -25,15 +25,15 @@ function Navbar({cart}) {
           </label>
           <ul className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
             <li>
-              <Link to="/">Home</Link>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <Link to="/products" className="justify-between">
+              <NavLink to="/products" className="justify-between">
                 Product List
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/admin">Admin Dashboard</Link>
+              <NavLink to="/admin">Admin Dashboard</NavLink>
             </li>
           </ul>
         </div>
@@ -43,14 +43,14 @@ function Navbar({cart}) {
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          <li>
-            <Link to="/">Home</Link>
+          <li className="mx-2">
+            <NavLink className='h-8' to="/">Home</NavLink>
           </li>
-          <li>
-            <Link to="/products">Product List</Link>
+          <li className="mx-2">
+            <NavLink className='h-8' to="/products">Product List</NavLink>
           </li>
-          <li>
-            <Link to="/admin">Admin Dashboard</Link>
+          <li className="mx-2">
+            <NavLink className='h-8' to="/admin">Admin Dashboard</NavLink>
           </li>
         </ul>
       </div>
