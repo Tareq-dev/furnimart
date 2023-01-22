@@ -8,9 +8,9 @@ function Cart({ cart, onRemoveCart, itemsPrice }) {
 
   return (
     <div className="text-black">
-      <h1 className="text-xl pb-1 text-center py-14">Cart</h1>
+      <h1 className="text-xl pb-1 text-center py-14">My Cart</h1>
       <div className="md:flex md:flex-col md:items-center py-8">
-        {cart.length === 0 && <p className="text-xl font-semibold">Cart is empty ! Please add to cart</p>}
+        {cart.length === 0 && <p className="text-xl md:font-semibold text-center">Cart is empty ! Please add to cart</p>}
         {cart?.map((item) => (
           <div className="flex w-[400px] px-2 text-center items-center shadow-sm mt-4 bg-[#ebfdff] rounded-sm">
             <img className="w-1/4 h-20" src={item.picture} alt="" />

@@ -16,7 +16,7 @@ function ManageProducts() {
         </Link>
       </div>
       <p className="text-xl text-center pt-8 font-bold">Product List</p>
-      <div className="overflow-x-auto my-6 flex justify-center">
+      <div className=" w-[450px] md:w-full my-6 flex justify-center">
         <table className="table w-full mx-4">
           <thead>
             <tr>
@@ -27,8 +27,8 @@ function ManageProducts() {
             </tr>
           </thead>
           <tbody>
-            {productDataParse.map((product, i) => (
-              <tr key={i}>
+            {productDataParse.map((product) => (
+              <tr key={product._id}>
                 <td>
                   <div className="flex items-center space-x-3">
                     <div className="avatar">

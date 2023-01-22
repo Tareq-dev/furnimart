@@ -11,15 +11,15 @@ function ProductList({ onRemoveCart, addToCard, cart, itemsPrice }) {
       <p className="md:tracking-[10px] tracking-[5px] md:text-2xl uppercase text-center md:py-8 py-4">
         Our Product Lists
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-1 px-14 md:py-8">
+      <div className="grid grid-cols-1 justify-items-center md:grid-cols-4 gap-1 px-14 md:py-8">
         {productDataParse
-          .map((product, i) => (
+          .map((product) => (
             <ProductCard
               cart={cart}
               onRemoveCart={onRemoveCart}
               itemsPrice={itemsPrice}
               product={product}
-              key={i}
+              key={product._id}
               addToCard={addToCard}
             />
           ))

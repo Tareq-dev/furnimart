@@ -22,7 +22,7 @@ function Banner() {
           </div>
           <div className="flex justify-center md:block">
             <button
-              className="uppercase bg-blue-400 rounded-lg text-white font-bold px-2 py-1"
+              className="uppercase bg-pink-600 rounded-lg text-white font-bold px-2 py-1"
               type=""
             >
               Purchase

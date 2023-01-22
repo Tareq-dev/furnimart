@@ -1,10 +1,7 @@
 import React from "react";
 import { BsCart3 } from "react-icons/bs";
 import { Link, NavLink } from "react-router-dom";
-import { auth } from "../firebase.config";
 function Navbar({ cart }) {
-  const user = auth.currentUser;
-  console.log(user);
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
@@ -64,7 +61,7 @@ function Navbar({ cart }) {
       </div>
       <div className="navbar-end">
         <Link to="/cart" className="flex relative mr-2 md:mx-5">
-          <p className="bg-red-600 text-white rounded-lg font-semibold text-md absolute top-[-8px] right-1 px-1">
+          <p className="bg-pink-600 text-white rounded-lg font-semibold md:text-md absolute top-[-8px] right-1 px-1">
             {cart.length}
           </p>
           <BsCart3 className="mt-3 md:ml-4" size={24} />

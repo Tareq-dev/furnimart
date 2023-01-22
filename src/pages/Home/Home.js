@@ -1,6 +1,7 @@
 import React from "react";
 import Banner from "../../components/Banner";
 import Footer from "../../components/Footer";
+import Gallary from "../../components/Gallary";
 import TrendingProducts from "../../components/TrendingProducts";
 import LatestAddition from "./../../components/LatestAddition";
 import Subscribs from "./../../components/Subscribs";
@@ -15,6 +16,7 @@ function Home({ itemsPrice, addToCard, cart, onRemoveCart }) {
         cart={cart}
         onRemoveCart={onRemoveCart}
       />
+      <Gallary />
       <LatestAddition
         itemsPrice={itemsPrice}
         addToCard={addToCard}
