@@ -11,10 +11,10 @@ function LatestAddition({ itemsPrice, addToCard, cart, onRemoveCart }) {
         <p className="md:text-xl md:pr-10">View All</p>
       </div>
       <div className="grid md:grid-cols-4 grid-cols-1 justify-items-center gap-1 md:px-14 py-4">
-        {products.slice(4, 8).map((product) => (
+        {products.slice(4, 8).map((product,i) => (
           <ProductCard
             product={product}
-            key={product._id}
+            key={i}
             itemsPrice={itemsPrice}
             addToCard={addToCard}
             cart={cart}

@@ -11,10 +11,10 @@ function TrendingProducts({ itemsPrice, addToCard, cart, onRemoveCart }) {
         <p className="md:text-xl md:pr-10 pr-4">View All</p>
       </div>
       <div className="grid md:grid-cols-4 grid-cols-1 gap-1 justify-items-center md:px-14 py-6">
-        {products.slice(0, 4).map((product) => (
+        {products.slice(0, 4).map((product,i) => (
           <ProductCard
             product={product}
-            key={product._id}
+            key={i}
             itemsPrice={itemsPrice}
             addToCard={addToCard}
             cart={cart}

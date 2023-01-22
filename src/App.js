@@ -11,13 +11,15 @@ import OrderList from "./pages/AdminDashboard/OrderList";
 import ManageProducts from "./pages/AdminDashboard/ManageProducts";
 import Admin from "./pages/AdminDashboard/Admin";
 import AddProduct from "./components/AddProduct";
-import useProducts from './hooks/useProducts';
+import useProducts from "./hooks/useProducts";
+import Login from "./pages/Login/Login";
+import RequireAuth from "./pages/Login/RequireAuth";
 
 function App() {
   const [cart, setCart] = useState([]);
 
   // fetch products
-  const [products] = useProducts([])
+  const [products] = useProducts([]);
   // Add to cart logic
 
   const addToCard = (product) => {
@@ -50,7 +52,7 @@ function App() {
   // Subtotal of cart
 
   const itemsPrice = cart.reduce((a, c) => a + c.quantity * c.price, 0);
-  
+
   return (
     <div className="md:px-14 overflow-hidden">
       <Navbar cart={cart} />
@@ -77,6 +79,7 @@ function App() {
             />
           }
         />
+        <Route path="/login" element={<Login />} />
         <Route
           path="/cart"
           element={
@@ -92,7 +95,14 @@ function App() {
           path="/admin/manage-product/add-product"
           element={<AddProduct />}
         />
-        <Route path="/admin" element={<AdminDashboard />}>
+        <Route
+          path="/admin"
+          element={
+            <RequireAuth>
+              <AdminDashboard />
+            </RequireAuth>
+          }
+        >
           <Route index element={<Admin />}></Route>
           <Route path="customers" element={<Customers />}></Route>
           <Route path="order" element={<OrderList />}></Route>

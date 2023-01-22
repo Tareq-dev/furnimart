@@ -1,7 +1,10 @@
 import React from "react";
 import { BsCart3 } from "react-icons/bs";
 import { Link, NavLink } from "react-router-dom";
+import { auth } from "../firebase.config";
 function Navbar({ cart }) {
+  const user = auth.currentUser;
+  console.log(user);
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
@@ -66,9 +69,6 @@ function Navbar({ cart }) {
           </p>
           <BsCart3 className="mt-3 md:ml-4" size={24} />
         </Link>
-        <button className="md:mx-5 mx-2 px-2 bg-sky-200 rounded-sm">
-          Register
-        </button>
         <label
           htmlFor="my-drawer-2"
           className="px-2 py-1 font-bold drawer-button lg:hidden"
